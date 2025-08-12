@@ -1,6 +1,5 @@
 """
 置信度计算模块
-严格实现论文3.1节中的三因子置信度计算方法
 """
 
 import numpy as np
@@ -171,4 +170,5 @@ class ConfidenceCalculator:
 
         except Exception as e:
             logger.error(f"置信度验证失败: {e}")
+
             return False
