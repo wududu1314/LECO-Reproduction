@@ -1,6 +1,5 @@
 """
 评估和结果分析模块
-确保评估标准与原论文完全一致，增加对比分析功能
 """
 
 import json
@@ -810,5 +809,6 @@ class Evaluator:
         pattern += "✓" if baseline_correct else "✗"
         pattern += "✓" if original_correct else "✗"
         pattern += "✓" if improved_correct else "✗"
+
 
         return f"{pattern[0]}→{pattern[1]}→{pattern[2]}"
